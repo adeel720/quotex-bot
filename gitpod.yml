@@ -1,0 +1,11 @@
+image: gitpod/workspace-full
+tasks:
+  - name: Start Browser
+    command: |
+      echo "Installing dependencies..."
+      pip install pyppeteer
+      echo "Starting Chrome..."
+      google-chrome --remote-debugging-port=9222 --no-sandbox &
+ports:
+  - port: 9222
+    onOpen: ignore
