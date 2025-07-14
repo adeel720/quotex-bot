@@ -5,7 +5,7 @@ async def main():
     page = await browser.newPage()
     await page.goto('https://market-qx.pro/en/sign-in')
     await page.type('input[name="email"]', 'adeelhr2024@outlook.com')
-    await page.type('input[name="password"]', 'Malik@S123')  # اپنا پاس ورڈ یہاں لگاؤ
+    await page.type('input[name="password"]', '')  # اپنا پاس ورڈ یہاں لگاؤ
     await page.click('.modal-sign__block-button')
     await page.waitForNavigation()
     await page.goto('https://market-qx.pro/en/trade')
